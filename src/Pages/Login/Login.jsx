@@ -1,12 +1,13 @@
 import { useContext } from "react";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Login = () => {
     const { signIn } = useContext(AuthContext)
-    console.log(signIn);
+    const navigate = useNavigate();
+
     const handleRegister = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -24,6 +25,7 @@ const Login = () => {
                     showConfirmButton: false,
                     timer: 1500
                 });
+                navigate("/")
             })
             .catch(error => {
                 const errorMessage = error.message;
@@ -32,7 +34,7 @@ const Login = () => {
 
     }
     return (
-        <div className="bg-slate-900">
+        <div className="my-10">
              <h1 className="text-center font-bold text-3xl mb-4">Login Here</h1>
         <form onSubmit={handleRegister} className="max-w-sm mx-auto">
                 <div className="mb-5">

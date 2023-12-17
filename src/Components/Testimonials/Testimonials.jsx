@@ -10,7 +10,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const Testimonials = () => {
     return (
         <div>
-              <h1 className="text-center font-bold text-4xl my-12">What people say</h1>
+              <h1 className="text-[#007bff] text-center font-bold text-4xl my-12">What says our<span className="text-[#00bbf0]">  Customers</span> </h1>
                  <div className=''>
             <Swiper
                 spaceBetween={30}
@@ -28,7 +28,7 @@ const Testimonials = () => {
             >
                 <SwiperSlide className='p-20 text-center'>
                 <p>
-                    "Tea perfection! The Red Rooibos Organic, Fair Trade is a comforting choice, and the Chamomile Botanical Blend Sachets are a true gem. The teas not only meet but exceed expectations. Premium quality, delightful aromas, and an absolute joy to taste. Highly recommended!"
+                Our experience with this platform has been exceptional. From seamless transactions to top-notch security features, it s evident that customer satisfaction is their priority. The expert support team adds tremendous value, making our journey in the digital realm smooth and worry-free. Highly recommended!
                     </p>
                     <div className='text-center'>
                     <img className="w-16 h-16 rounded-full mt-4 mx-auto" src="https://i.ibb.co/9c495Nt/istockphoto-1399565382-170667a.webp" alt="profile picture" /> 
@@ -38,7 +38,7 @@ const Testimonials = () => {
                 </SwiperSlide>
                 <SwiperSlide className='p-20 text-center'>
                 <p>
-                    "Tea perfection! The Red Rooibos Organic, Fair Trade is a comforting choice, and the Chamomile Botanical Blend Sachets are a true gem. The teas not only meet but exceed expectations. Premium quality, delightful aromas, and an absolute joy to taste. Highly recommended!"
+                Incredible service! This platform goes above and beyond with user-friendly features and unparalleled security. Expert support ensures a hassle-free experience. Grateful for a team dedicated to customer satisfaction. A standout in the digital space
                     </p>
                     <div>
                     <img className="w-16 h-16 rounded-full mt-4 mx-auto" src="https://i.ibb.co/bBw9zgX/360-F-224869519-a-Rae-Lneq-ALf-PNBzg0xx-MZXghtv-BXkf-IA.jpg" alt="profile picture" /> 
@@ -48,7 +48,7 @@ const Testimonials = () => {
                 </SwiperSlide>
                 <SwiperSlide className='p-20 text-center'>
                     <p>
-                    "Tea perfection! The Red Rooibos Organic, Fair Trade is a comforting choice, and the Chamomile Botanical Blend Sachets are a true gem. The teas not only meet but exceed expectations. Premium quality, delightful aromas, and an absolute joy to taste. Highly recommended!"
+                    Outstanding service! The platforms user-centric approach, coupled with robust security features, has truly impressed us. Expert support ensures a smooth experience, making it our go-to choice for digital transactions. Highly satisfied and confident in recommending to others!
                     </p>
                     <div>
                     <img className="w-16 h-16 rounded-full mt-4 mx-auto" src="https://i.ibb.co/d0NZMC5/portrait-handsome-caucasian-man-formal-260nw-2142820441.webp" alt="profile picture" /> 

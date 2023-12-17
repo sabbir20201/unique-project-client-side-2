@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 
 const Register = () => {
-    const {createUser} = useContext(AuthContext)
-    console.log(createUser);
+    const {createUser, updatedProfile} = useContext(AuthContext)
+    // const navigate = useNavigate();
     const handleRegister = (e)=>{
         e.preventDefault();
         const form = e.target;
@@ -22,10 +22,16 @@ const Register = () => {
             Swal.fire({
                 position: "top-end",
                 icon: "success",
-                title: "Your work has been saved",
+                title: "user created successfully",
                 showConfirmButton: false,
                 timer: 1500
               });
+              updatedProfile(name, photoURL)
+              .then(()=>{
+                console.log('user profile updated');
+              })
+              .catch(error => console.log(error))
+            //   navigate("/")
         })
         .catch(error =>{
             console.log(error);
@@ -33,7 +39,7 @@ const Register = () => {
 
     }
     return (
-        <div>
+        <div className="my-10">
             <h1 className="text-center font-bold text-3xl mb-4">Register Now</h1>
     <form onSubmit={handleRegister} className="max-w-sm mx-auto">
                 <div className="mb-5">
